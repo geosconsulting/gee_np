@@ -1,0 +1,40 @@
+
+Work on a virtual environment:
+
+workon my_project
+
+Alternatively, you can make a project, which creates the virtual environment, and also a project directory inside $PROJECT_HOME, which is cd -ed into when you workon myproject.
+
+mkproject myproject
+
+virtualenvwrapper provides tab-completion on environment names. It really helps when you have a lot of environments and have trouble remembering their names.
+
+workon also deactivates whatever environment you are currently in, so you can quickly switch between environments.
+
+Deactivating is still the same:
+
+ deactivate
+
+To delete:
+
+rmvirtualenv venv
+
+lsvirtualenv
+    List all of the environments.
+cdvirtualenv
+    Navigate into the directory of the currently activated virtual environment, so you can browse its site-packages, for example.
+cdsitepackages
+    Like the above, but directly into site-packages directory.
+lssitepackages
+    Shows contents of site-packages director
+
+c:\Python27\python.exe C:\Python27\Lib\site-packages\numpy\f2py -c -m add add.f
+
+c:\Python27\python.exe C:\Python27\Lib\site-packages\numpy\f2py -c -m etw et_wet_reissue.f90 --fcompiler=gnu95 --compiler=mingw32
+
+
+ssh -p 3022 fabio@127.0.0.1
+
+jupyter notebook da remoto
+ssh -p 3022 -N -f -L localhost:8888:localhost:8889 fabio@127.0.0.1
+
